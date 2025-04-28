@@ -1,0 +1,46 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h5 {
+    font-family: 'Scheherazade', serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Icon Animation */
+.animated-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-card:hover .animated-icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.btn-primary {
+    background-color: #00695c;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #004d40;
+}
+
+body {
+    background-image: url('../images/arabic_bg.jpg');
+    background-size: 400px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.5); /* Warna putih dengan opacity 50% */
+    background-blend-mode: overlay;
+}
