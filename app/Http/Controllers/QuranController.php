@@ -25,6 +25,11 @@ class QuranController extends Controller
         $tafsirResponse = Http::get('https://equran.id/api/v2/tafsir/' . $id);
         $tafsir = $tafsirResponse->json()['data']['tafsir'] ?? [];
 
-        return view('quran.show', compact('surah', 'tafsir'));
+        // Ambil data Surat Al-Fatihah (nomor 1) ayat ke-1
+        $bismillahResponse = Http::get("https://equran.id/api/v2/surat/1");
+        $bismillahAyat = $bismillahResponse->json()['data']['ayat'][0];
+
+        // Kirim data ke view
+        return view('quran.show', compact('surah', 'tafsir', 'bismillahAyat'));
     }
 }
