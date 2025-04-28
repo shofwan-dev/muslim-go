@@ -79,7 +79,29 @@
         </div>
     @endforeach
 
-    <a href="{{ url('/quran') }}" class="btn btn-secondary mt-4">← Kembali ke Daftar Surah</a>
+    <div class="d-flex justify-content-between mt-5">
+        {{-- Tombol Surat Sebelumnya --}}
+        @if(!empty($surah['suratSebelumnya']))
+        <a href="{{ url('/quran/' . $surah['suratSebelumnya']['nomor']) }}" class="btn btn-primary">
+            ← {{ $surah['suratSebelumnya']['namaLatin'] }}
+        </a>
+        @else
+        <span></span>
+        @endif
+
+        {{-- Tombol Kembali ke Daftar Surah --}}
+        <a href="{{ url('/quran') }}" class="btn btn-secondary">Kembali ke Daftar Surah</a>
+
+        {{-- Tombol Surat Selanjutnya --}}
+        @if(!empty($surah['suratSelanjutnya']))
+        <a href="{{ url('/quran/' . $surah['suratSelanjutnya']['nomor']) }}" class="btn btn-primary">
+            {{ $surah['suratSelanjutnya']['namaLatin'] }} →
+        </a>
+        @else
+        <span></span>
+        @endif
+    </div>
+    </div>
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
