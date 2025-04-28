@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuranController;
 use App\Http\Controllers\DoaController;
 use App\Http\Controllers\DzikirController;
+use App\Http\Controllers\AsmaulHusnaController;
 
 Route::get('/', function () {
     return view('home');
@@ -24,3 +25,5 @@ Route::get('/doa', [DoaController::class, 'index'])->name('doa.index');
 Route::get('/doa/{id}', [DoaController::class, 'show'])->name('doa.show');
 
 Route::get('/dzikir', [DzikirController::class, 'index'])->name('dzikir.index');
+
+Route::get('/asmaulhusna', [AsmaulHusnaController::class, 'index'])->name('asmaulhusna.index');

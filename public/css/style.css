@@ -44,3 +44,36 @@ body {
     background-color: rgba(255, 255, 255, 0.5); /* Warna putih dengan opacity 50% */
     background-blend-mode: overlay;
 }
+
+/* Asmaul Husna */
+/* Arabic Style for Asmaul Husna */
+.asmaul-husna-card {
+    border: 2px solid #d4af37; /* Emas */
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff8e1, #fbe7c6); /* Warna lembut */
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.asmaul-husna-card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.arabic-text {
+    font-family: 'Scheherazade', serif; /* Font Arabic */
+    font-size: 2rem;
+    color: #d4af37; /* Emas */
+}
+
+.latin-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.indo-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
