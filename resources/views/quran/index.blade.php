@@ -10,7 +10,7 @@
             <div class="card h-100 shadow-sm">
                 <div class="card-body text-center">
                     <span class="badge bg-primary rounded-circle me-3 p-2">{{ $surah['nomor'] }}</span>
-                    <h5 class="card-title">{{ $surah['nama'] }}</h5>
+                    <h5 class="card-title"><span style="font-family: 'Scheherazade', serif; font-size: 2rem;">{{ $surah['nama'] }}</span></h5>
                     <h3 class="card-title">< {{ $surah['namaLatin'] }} ></h3>
                     <ul class="list-unstyled">
                         <li><i class="fas fa-book-open text-primary"></i> {{ $surah['arti'] }}</li>

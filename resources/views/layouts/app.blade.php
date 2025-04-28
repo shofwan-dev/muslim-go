@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Scheherazade&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/quran/">Quran</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/doa">Doa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/doa/">Doa</a></li>
                     <li class="nav-item"><a class="nav-link" href="/almatsurat">Al Matsurat</a></li>
                     <li class="nav-item"><a class="nav-link" href="/asmaulhusna">Asmaul Husna</a></li>
                     <li class="nav-item"><a class="nav-link" href="/hadits">Hadits</a></li>

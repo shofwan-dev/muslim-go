@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2 class="mb-4 text-center">{{ $surah['namaLatin'] }} ({{ $surah['nama'] }})</h2>
+    <h2 class="mb-4 text-center">{{ $surah['namaLatin'] }} (<span style="font-family: 'Scheherazade', serif; font-size: 4rem;">{{ $surah['nama'] }}</span>)</h2>
     <p class="text-center mb-5">{{ $surah['arti'] }} - {{ $surah['tempatTurun'] }} - {{ $surah['jumlahAyat'] }} Ayat</p>
 
     <!-- Deskripsi Surat -->
@@ -34,7 +34,7 @@
                     Browser anda tidak mendukung audio.
                 </audio>
             </div>
-            <h4 class="text-end" style="font-family: 'Scheherazade', serif;">{{ $ayat['teksArab'] }}</h4>
+            <h4 class="text-end" style="font-family: 'Scheherazade', serif; font-size: 2rem;">{{ $ayat['teksArab'] }}</h4>
             <p class="mt-2">{{ $ayat['teksIndonesia'] }}</p>
 
             <!-- Accordion for Tafsir -->
