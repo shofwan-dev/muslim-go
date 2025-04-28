@@ -11,7 +11,7 @@
             $menus = [
                 ['name' => 'Quran', 'icon' => 'fas fa-book-quran', 'link' => '/muslim-go/muslim-go/public/quran'],
                 ['name' => 'Doa', 'icon' => 'fas fa-hands-praying', 'link' => '/muslim-go/muslim-go/public/doa/'],
-                ['name' => 'Al-Matsurat', 'icon' => 'fas fa-feather', 'link' => '/almatsurat'],
+                ['name' => 'Dzikir', 'icon' => 'fas fa-feather', 'link' => '/muslim-go/muslim-go/public/dzikir'],
                 ['name' => 'Asmaul Husna', 'icon' => 'fas fa-star-and-crescent', 'link' => '/asmaulhusna'],
                 ['name' => 'Hadits', 'icon' => 'fas fa-scroll', 'link' => '/hadits'],
                 ['name' => 'Arah Qiblat', 'icon' => 'fas fa-compass', 'link' => '/qibla'],

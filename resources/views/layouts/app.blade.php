@@ -22,7 +22,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/quran/">Quran</a></li>
                     <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/doa/">Doa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/almatsurat">Al Matsurat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/dzikir">Dzikir</a></li>
                     <li class="nav-item"><a class="nav-link" href="/asmaulhusna">Asmaul Husna</a></li>
                     <li class="nav-item"><a class="nav-link" href="/hadits">Hadits</a></li>
                     <li class="nav-item"><a class="nav-link" href="/qibla">Arah Qiblat</a></li>
