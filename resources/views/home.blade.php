@@ -13,7 +13,7 @@
                 ['name' => 'Doa', 'icon' => 'fas fa-hands-praying', 'link' => '/muslim-go/muslim-go/public/doa/'],
                 ['name' => 'Dzikir', 'icon' => 'fas fa-feather', 'link' => '/muslim-go/muslim-go/public/dzikir'],
                 ['name' => 'Asmaul Husna', 'icon' => 'fas fa-star-and-crescent', 'link' => '/muslim-go/muslim-go/public/asmaulhusna'],
-                ['name' => 'Hadits', 'icon' => 'fas fa-scroll', 'link' => '/hadits'],
+                ['name' => 'Hadits', 'icon' => 'fas fa-scroll', 'link' => '/muslim-go/muslim-go/public/hadits'],
                 ['name' => 'Arah Qiblat', 'icon' => 'fas fa-compass', 'link' => '/qibla'],
                 ['name' => 'Blog Islami', 'icon' => 'fas fa-pen-nib', 'link' => '/blog'],
             ];
