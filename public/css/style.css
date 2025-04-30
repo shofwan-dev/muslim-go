@@ -77,3 +77,57 @@ body {
     font-size: 1rem;
     color: #555;
 }
+
+/* Card Animations */
+.animate-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Arabic Text Styling */
+.arabic-text {
+    font-family: 'Scheherazade', serif; /* Font Arabic */
+    font-size: 2rem; /* Ukuran font */
+    text-align: right; /* Penulisan dari kanan ke kiri */
+    direction: rtl; /* Arah teks dari kanan ke kiri */
+    color: #333; /* Warna teks */
+    line-height: 2.5rem; /* Jarak antar baris */
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px; /* Membuat sudut card melengkung */
+    overflow: hidden; /* Menghindari elemen keluar dari card */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00695c; /* Warna hijau */
+}
+
+/* Back to Top Button */
+#backToTop {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan */
+    background-color: #00695c; /* Warna tombol */
+    color: #fff; /* Warna teks */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+    background-color: #004d40; /* Warna tombol saat hover */
+}

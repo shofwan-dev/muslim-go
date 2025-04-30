@@ -5,6 +5,10 @@
     <img src="{{ asset('images/musllim_go.png') }}" alt="Ornament" width="100" class="mb-4">
     <h1 class="mb-4" style="font-family: 'Scheherazade', serif;">Selamat Datang di Muslim-Go</h1>
     <p class="mb-5">Platform Islami untuk kebutuhan harianmu.</p>
+    <form action="{{ route('quran.search') }}" method="GET" class="d-flex mb-4">
+        <input type="text" name="query" class="form-control me-2" placeholder="Cari kata dalam quran..." required>
+        <button type="submit" class="btn btn-primary">Cari</button>
+    </form>
 
     <div class="row g-4">
         @php
@@ -14,6 +18,7 @@
                 ['name' => 'Dzikir', 'icon' => 'fas fa-feather', 'link' => '/muslim-go/muslim-go/public/dzikir'],
                 ['name' => 'Asmaul Husna', 'icon' => 'fas fa-star-and-crescent', 'link' => '/muslim-go/muslim-go/public/asmaulhusna'],
                 ['name' => 'Hadits', 'icon' => 'fas fa-scroll', 'link' => '/muslim-go/muslim-go/public/hadits'],
+                ['name' => 'Tahlil', 'icon' => 'fas fa-users', 'link' => '/muslim-go/muslim-go/public/tahlil'],
                 ['name' => 'Arah Qiblat', 'icon' => 'fas fa-compass', 'link' => '/qibla'],
                 ['name' => 'Blog Islami', 'icon' => 'fas fa-pen-nib', 'link' => '/blog'],
             ];

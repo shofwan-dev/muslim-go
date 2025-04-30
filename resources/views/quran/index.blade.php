@@ -2,8 +2,11 @@
 
 @section('content')
 <div class="container">
+    <form action="{{ route('quran.search') }}" method="GET" class="d-flex mb-4">
+        <input type="text" name="query" class="form-control me-2" placeholder="Cari kata dalam quran..." required>
+        <button type="submit" class="btn btn-primary">Cari</button>
+    </form>
     <h1 class="mb-4 text-center">Daftar Surah Al-Qur'an</h1>
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
         @foreach($surahs as $surah)
         <div class="col">

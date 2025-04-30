@@ -2,34 +2,39 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Http;
+use App\Models\Quran;
+use Illuminate\Http\Request;
 
 class QuranController extends Controller
 {
     public function index()
     {
-        // Ambil semua daftar surah
-        $response = Http::get('https://equran.id/api/v2/surat');
-        $surahs = $response->json()['data'] ?? [];
+        // Ambil semua daftar surah menggunakan model
+        $surahs = Quran::getAllSurahs();
 
         return view('quran.index', compact('surahs'));
     }
 
     public function show($id)
     {
-        // Ambil detail 1 surat
-        $response = Http::get('https://equran.id/api/v2/surat/' . $id);
-        $surah = $response->json()['data'] ?? [];
+        // Ambil detail 1 surat menggunakan model
+        $surah = Quran::getSurahDetail($id);
 
-        // Ambil tafsir surat
-        $tafsirResponse = Http::get('https://equran.id/api/v2/tafsir/' . $id);
-        $tafsir = $tafsirResponse->json()['data']['tafsir'] ?? [];
+        // Ambil tafsir surat menggunakan model
+        $tafsir = Quran::getTafsir($id);
 
-        // Ambil data Surat Al-Fatihah (nomor 1) ayat ke-1
-        $bismillahResponse = Http::get("https://equran.id/api/v2/surat/1");
-        $bismillahAyat = $bismillahResponse->json()['data']['ayat'][0];
+        // Ambil data Surat Al-Fatihah (nomor 1) ayat ke-1 menggunakan model
+        $bismillahAyat = Quran::getBismillahAyat();
 
         // Kirim data ke view
         return view('quran.show', compact('surah', 'tafsir', 'bismillahAyat'));
+    }
+
+    public function search(Request $request)
+    {
+        $query = $request->input('query'); // Ambil kata kunci dari input pengguna
+        $results = Quran::searchAyah($query); // Panggil fungsi di model
+
+        return view('quransearch.search', compact('results', 'query')); // Kirim data ke view
     }
 }

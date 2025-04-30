@@ -2,6 +2,11 @@
 
 @section('content')
 <div class="container">
+    <!-- Form Pencarian -->
+<form action="{{ route('quran.search') }}" method="GET" class="d-flex mb-4">
+    <input type="text" name="query" class="form-control me-2" placeholder="Cari kata dalam quran..." required>
+    <button type="submit" class="btn btn-primary">Cari</button>
+</form>
     <h2 class="mb-4 text-center">{{ $surah['namaLatin'] }} (<span style="font-family: 'Scheherazade', serif; font-size: 4rem;">{{ $surah['nama'] }}</span>)</h2>
     <p class="text-center mb-5">{{ $surah['arti'] }} - {{ $surah['tempatTurun'] }} - {{ $surah['jumlahAyat'] }} Ayat</p>
 
