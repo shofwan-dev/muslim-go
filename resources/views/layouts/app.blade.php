@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Scheherazade&display=swap" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -26,6 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/asmaulhusna">Asmaul Husna</a></li>
                     <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/hadits">Hadits</a></li>
                     <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/tahlil">Tahlil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/muslim-go/muslim-go/public/kisahnabi">Kisah Nabi</a></li>
                     <li class="nav-item"><a class="nav-link" href="/qibla">Arah Qiblat</a></li>
                     <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
                 </ul>

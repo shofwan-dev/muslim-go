@@ -7,6 +7,7 @@ use App\Http\Controllers\DzikirController;
 use App\Http\Controllers\AsmaulHusnaController;
 use App\Http\Controllers\HadithController;
 use App\Http\Controllers\TahlilController;
+use App\Http\Controllers\KisahNabiController;
 
 Route::get('/', function () {
     return view('home');
@@ -34,3 +35,5 @@ Route::get('/asmaulhusna', [AsmaulHusnaController::class, 'index'])->name('asmau
 Route::get('/hadits', [HadithController::class, 'index'])->name('hadits.index');
 Route::get('/hadits/{slug}', [HadithController::class, 'show'])->name('hadits.show');
 Route::get('/tahlil', [TahlilController::class, 'index'])->name('tahlil.index');
+
+Route::get('/kisahnabi', [KisahNabiController::class, 'index'])->name('kisahnabi.index');

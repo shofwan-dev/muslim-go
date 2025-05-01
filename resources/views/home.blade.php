@@ -19,6 +19,7 @@
                 ['name' => 'Asmaul Husna', 'icon' => 'fas fa-star-and-crescent', 'link' => '/muslim-go/muslim-go/public/asmaulhusna'],
                 ['name' => 'Hadits', 'icon' => 'fas fa-scroll', 'link' => '/muslim-go/muslim-go/public/hadits'],
                 ['name' => 'Tahlil', 'icon' => 'fas fa-users', 'link' => '/muslim-go/muslim-go/public/tahlil'],
+                ['name' => 'Kisah Nabi', 'icon' => 'fas fa-user-ninja', 'link' => '/muslim-go/muslim-go/public/kisahnabi'],
                 ['name' => 'Arah Qiblat', 'icon' => 'fas fa-compass', 'link' => '/qibla'],
                 ['name' => 'Blog Islami', 'icon' => 'fas fa-pen-nib', 'link' => '/blog'],
             ];
