@@ -23,22 +23,4 @@ class HadithController extends Controller
             'hadiths' => $hadithBook['items'] ?? [],
         ]);
     }
-
-    public function search(Request $request)
-    {
-        $query = $request->input('query');
-
-        // Panggil API untuk mencari hadits berdasarkan kata kunci
-        $response = Hadith::searchHadiths($query);
-
-        // Debugging: Log data yang diterima
-        Log::debug('Response dari API:', ['response' => $response]);
-
-        $results = $response['data'] ?? [];
-
-        return view('hadits.search', [
-            'query' => $query,
-            'results' => $results,
-        ]);
-    }
 }
